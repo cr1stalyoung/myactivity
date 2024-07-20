@@ -1,0 +1,5 @@
+disnake==2.9.2
+asyncpg==0.29.0
+SQLAlchemy==2.0.31
+redis==5.0.6
+pillow==10.3.0
