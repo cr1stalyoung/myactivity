@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.2.1 - 2024-08-02
+
+### 🟡 Rebalance
++ increased the amount of koins from 50 to 2500 for each new level.
+
+### 🔴 Bug Fixed
++ Anti-AfK has been removed.
+
 ## v1.2.0 - 2024-07-20
 
 ### 🟢 Updated
