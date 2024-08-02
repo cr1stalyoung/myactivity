@@ -53,7 +53,7 @@ class UpdateProfileMember(PGSClient):
                                    level: int) -> None:
         async with PGSClient() as session:
             async with session.begin():
-                profile = update(ProfileModel).where(ProfileModel.guild_id == guild_id, ProfileModel.user_id == user_id).values(coin=ProfileModel.coin + 50, level=level)
+                profile = update(ProfileModel).where(ProfileModel.guild_id == guild_id, ProfileModel.user_id == user_id).values(coin=ProfileModel.coin + 2500, level=level)
                 await session.execute(profile)
 
     async def update_member_before(self, 

@@ -32,19 +32,18 @@ class OnVoiceProcessing(commands.Cog):
                     else:
                         await self.vc_controller.update_member_time(member.guild.id, member.id, datetime.utcnow())
             elif after.channel is None or after.self_mute:
-                if len(before.channel.members) not in [0, 1]:
-                    last_entry, _ = await self.vc_controller.get_member_data(member.guild.id, member.id)
-                    if last_entry is None:
-                        await self.vc_controller.insert_new_profile(member.guild.id, member.id)
-                    else:
-                        data_per_minute = int((datetime.utcnow() - datetime.fromisoformat(str(last_entry))).total_seconds() / 60)
-                        if data_per_minute != 0:
-                            experience, level, longest = await self.vc_controller.update_member_after(member.guild.id, member.id, data_per_minute, min(1600, data_per_minute * 4))
-                            if longest < data_per_minute:
-                                await self.vc_controller.update_member_longest(member.guild.id, member.id, data_per_minute)
-                            level_up = min(300, int(experience / 500))
-                            if level < level_up:
-                                await self.vc_controller.update_level_profile(member.guild.id, member.id, level_up)
+                last_entry, _ = await self.vc_controller.get_member_data(member.guild.id, member.id)
+                if last_entry is None:
+                    await self.vc_controller.insert_new_profile(member.guild.id, member.id)
+                else:
+                    data_per_minute = int((datetime.utcnow() - datetime.fromisoformat(str(last_entry))).total_seconds() / 60)
+                    if data_per_minute != 0:
+                        experience, level, longest = await self.vc_controller.update_member_after(member.guild.id, member.id, data_per_minute, min(1600, data_per_minute * 4))
+                        if longest < data_per_minute:
+                            await self.vc_controller.update_member_longest(member.guild.id, member.id, data_per_minute)
+                        level_up = min(300, int(experience / 500))
+                        if level < level_up:
+                            await self.vc_controller.update_level_profile(member.guild.id, member.id, level_up)
         except Exception as error:
             print(f"An error occurred [on_voice_state_update]: {error}")
 
