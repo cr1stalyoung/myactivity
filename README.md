@@ -5,7 +5,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/follow-cr1stalyoung-white?style=flat" alt="follow me">
   <img src="https://img.shields.io/badge/version-1.1.0-coral?style=flat" alt="version">
-  <a href="https://discord.gg/sGZGvxng" target="_blank">
+  <a href="https://discord.gg/wXKCr8WKUt" target="_blank">
     <img src="https://img.shields.io/badge/official-discord-informational?style=flat" alt="discord">
   </a>
 </p>
