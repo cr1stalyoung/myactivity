@@ -145,7 +145,7 @@ class ProfileBuilder:
                 refresh = disnake.ui.Button(style=disnake.ButtonStyle.gray, custom_id=f"refresh:{interaction.author.id}", label="Refresh", emoji="<:refresh:1230512089978638337>")
                 faq = disnake.ui.Button(style=disnake.ButtonStyle.gray, custom_id=f"faq:{interaction.author.id}", label="FAQ", emoji="<:faq:1230512113596764191>")
                 case = disnake.ui.Button(style=disnake.ButtonStyle.gray, custom_id=f"case:{interaction.author.id}", label="Cases", emoji="<:case:1230512170182377563>")
-                invite = disnake.ui.Button(style=disnake.ButtonStyle.gray, label="Get CP", url="https://discord.gg/sGZGvxng", emoji="<:cp:1234050162205392927>")
+                invite = disnake.ui.Button(style=disnake.ButtonStyle.gray, label="Get CP", url="https://discord.gg/wXKCr8WKUt", emoji="<:cp:1234050162205392927>")
                 await interaction.edit_original_message(file=file, attachments=None)
                 await interaction.edit_original_message(components=[settings, refresh, faq, case, invite])
                 # -----------------------------------------

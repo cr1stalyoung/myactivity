@@ -244,7 +244,7 @@ class FAQ(disnake.ui.StringSelect):
         elif self.values[0] == "3":
             embed = disnake.Embed(
                 title="MyActivity | Support",
-                description="**If you encounter an issue with the bot or if you've noticed/found a bug, you can get assistance or report the problem/bug on [Discord](https://discord.gg/sGZGvxng). Additionally, on Discord, you can stay updated with the bot's news, latest updates, and status.**\n",
+                description="**If you encounter an issue with the bot or if you've noticed/found a bug, you can get assistance or report the problem/bug on [Discord](https://discord.gg/wXKCr8WKUt). Additionally, on Discord, you can stay updated with the bot's news, latest updates, and status.**\n",
                 color=disnake.Color(int("ff3737", 16)))
             file_gif = disnake.File('resources/red.gif', filename='red.gif')
             embed.set_image(url='attachment://red.gif')
