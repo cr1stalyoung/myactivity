@@ -1,5 +1,2 @@
 __pycache__/
 /venv
-/app/controllers/baseController.py
-/resources
-settings.py
