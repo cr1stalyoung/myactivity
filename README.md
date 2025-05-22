@@ -3,23 +3,24 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/follow-cr1stalyoung-white?style=flat" alt="follow me">
-  <img src="https://img.shields.io/badge/version-1.1.0-coral?style=flat" alt="version">
-  <a href="https://discord.gg/wXKCr8WKUt" target="_blank">
-    <img src="https://img.shields.io/badge/official-discord-informational?style=flat" alt="discord">
-  </a>
+  <img src="https://img.shields.io/badge/follow-cr1stalyoung-white?style=flat-square&color=white" alt="follow me">
+  <img src="https://img.shields.io/badge/python-3.12-white?style=flat-square&color=green" alt="python_version">
+  <img src="https://img.shields.io/badge/disnake-2.9.2-white?style=flat-square&color=blue" alt="python_version">
+  <img src="https://img.shields.io/badge/pillow-10.3.0-white?style=flat-square&color=red" alt="python_version">
 </p>
 
-<hr style="border: 3px solid #000;">
+> [!IMPORTANT]  
+> **This bot was designed to be used across multiple servers simultaneously. If you only need it for use on a single server, you'll need to use the bot's code as a base and adapt it for single-server operation. The bot was developed using the technologies and versions listed above**
 
-### Links <img src="https://cdn.iconscout.com/icon/free/png-256/free-chain-link-connection-attach-37919.png" alt="links" wight="16" height="16">
+> [!WARNING]  
+> **To run the bot you need to create the necessary tables, columns, values, and relationships based on the model files located in app/models**
 
-<img src="https://i.ibb.co/jHSsgfw/Blackvariant-Button-Ui-System-Folders-Drives-Developer-1024.png" alt="links" wight="20" height="20"> [**Add MyActivity**](https://discord.com/oauth2/authorize?client_id=1222326731084533840&permissions=2147871744&scope=bot+applications.commands)<br>
-<img src="https://icon-library.com/images/github-logo-icon/github-logo-icon-15.jpg" alt="links" wight="20" height="20"> [**Patch Notes**](https://github.com/cr1stalyoung/myactivity/blob/main/CHANGELOG.md)<br>
-<img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="links" wight="16" height="16"> [**Discord**](https://discord.gg/sGZGvxng)<br>
-
-> [!NOTE]
-> **MyActivity bot is a free project for your discord servers. I spend my free time on its development and bug fixing, if you found a bug or have a problem with the bot, you can go to bot support discord and describe your problem. If you have any suggestions on how to optimize the code, let me know.**
+## Installation
+1. Clone this repo into folder ;
+2. Install dependencies: `pip install -r requirements.txt` ;
+3. Go to [Google Drive](https://drive.google.com/drive/folders/1_DDrPEOE7yb1neX7TOLmA6U1idFS2Esw?usp=drive_link) and download animation files ;
+4. Place the files in [cases](https://github.com/cr1stalyoung/tracking-activity-discord-bot/tree/main/resources/cases) ;
+5. Add your bot `API_TOKEN` and connection to PostgreSQL `DATABASE_URL` in [settings.py](https://github.com/cr1stalyoung/tracking-activity-discord-bot/blob/main/settings.py) .
 
 <hr style="border: 3px solid #000;">
 
@@ -34,7 +35,6 @@
 **Earning Coins:**
 +  You earn `1` coin for every minute spent on voice channels.
 +  You earn `50` coins for every new level.
-+  You can get `between 500 and 5000` coins in [discord](https://discord.gg/sGZGvxng).
 
 **Bot Commands:**
 + `/me` - View information about your own or someone else's profile.
